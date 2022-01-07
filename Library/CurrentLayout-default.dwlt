@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 679, y: 492}
   m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
-  controlID: 81
+  controlID: 16
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -219,7 +219,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 82
+  controlID: 21
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -244,7 +244,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 83
+  controlID: 22
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -338,20 +338,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Prefabs/Environment/Corridors
+    - Assets
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Prefabs/Environment/Corridors
+  - Assets
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\syich\Star Grandfather
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 321}
-    m_SelectedIDs: 86410000
-    m_LastClickedID: 16774
-    m_ExpandedIDs: 00000000f2400000f4400000f6400000f8400000fa400000fc400000fe400000004100007e41000000ca9a3b
+    scrollPos: {x: 0, y: 79}
+    m_SelectedIDs: 8a410000
+    m_LastClickedID: 16778
+    m_ExpandedIDs: 000000008a4100008c4100008e41000090410000924100009441000096410000984100009a41000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -379,7 +379,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000f2400000f4400000f6400000f8400000fa400000fc400000fe40000000410000
+    m_ExpandedIDs: 000000008a4100008c4100008e41000090410000924100009441000096410000984100009a410000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -406,7 +406,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -502,9 +502,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 2275}
-      m_SelectedIDs: 243f0000
-      m_LastClickedID: 16164
-      m_ExpandedIDs: 4c03ffff8e93ffff62fbffff
+      m_SelectedIDs: 72420000
+      m_LastClickedID: 0
+      m_ExpandedIDs: 62fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -614,11 +614,11 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: 0.34985226, y: -0.047747847, z: 0.017857898, w: 0.93541884}
     speed: 2
-    m_Value: {x: 0.35125434, y: -0.047720917, z: 0.017929466, w: 0.9348912}
+    m_Value: {x: -0.34985226, y: 0.047747847, z: -0.017857898, w: -0.93541884}
   m_Size:
     m_Target: 6.369773
     speed: 2
-    m_Value: 6.0697727
+    m_Value: 6.369773
   m_Ortho:
     m_Target: 0
     speed: 2
