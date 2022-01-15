@@ -8,16 +8,19 @@ public class Spawner : MonoBehaviour
     public float spawn_time = 3;
     public float t = 0;
     public int count = 5;
+    public List<Vector3> spawnPoints;
+    public List<GameObject> Snowmen;
 
     void Update()
     {
         t = t + Time.deltaTime;
         if ((t >= spawn_time) && (count > 0))
         {
-            Vector3 transformPosition = transform.position;
-            Vector3 spawnPoint = new Vector3(transformPosition.x + 3, transformPosition.y-1, transformPosition.z);
-            GameObject snowman = Instantiate(Snowman, spawnPoint, Quaternion.identity);
-            Destroy(snowman, 1.5f);
+            foreach (var spawnPoint in spawnPoints)
+            {
+                Snowmen.Add(Instantiate(Snowman, spawnPoint, Quaternion.identity));
+            }
+
             count--;
             t = 0;
         }
