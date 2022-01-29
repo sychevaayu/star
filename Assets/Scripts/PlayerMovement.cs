@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour
+namespace Assets.Scripts
+{
+    public class PlayerMovement : MonoBehaviour
 {
     public float turnSpeed = 20f;
 
@@ -53,4 +55,5 @@ public class PlayerMovement : MonoBehaviour
         m_Rigidbody.MovePosition (m_Rigidbody.position + m_Movement * m_Animator.deltaPosition.magnitude);
         m_Rigidbody.MoveRotation (m_Rotation);
     }
+}
 }

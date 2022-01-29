@@ -53,15 +53,24 @@
     <UnityVersion>2019.4.33f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Assets\Apartment_Door\Scripts\DoorController.cs" />
+    <Compile Include="Assets\Apartment_Door\Scripts\KeyController.cs" />
+    <Compile Include="Assets\Apartment_Door\Scripts\PlayerMovement.cs" />
+    <Compile Include="Assets\Extension\NullGuard.cs" />
+    <Compile Include="Assets\Scripts\Boom.cs" />
     <Compile Include="Assets\Scripts\CameraHandler.cs" />
     <Compile Include="Assets\Scripts\CharacterInventory.cs" />
     <Compile Include="Assets\Scripts\CharacterMovement.cs" />
     <Compile Include="Assets\Scripts\Controller.cs" />
+    <Compile Include="Assets\Scripts\Door.cs" />
+    <Compile Include="Assets\Scripts\Effect.cs" />
     <Compile Include="Assets\Scripts\GameEnding.cs" />
     <Compile Include="Assets\Scripts\Item.cs" />
+    <Compile Include="Assets\Scripts\Key.cs" />
     <Compile Include="Assets\Scripts\LightFlicker.cs" />
     <Compile Include="Assets\Scripts\Observer.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\Snow.cs" />
     <Compile Include="Assets\Scripts\Spawner.cs" />
     <Compile Include="Assets\Scripts\WaypointPatrol.cs" />
     <Compile Include="Assets\Scripts\properties\CameraConfig.cs" />
@@ -70,7 +79,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\3DBeginner_Third-PartyNotice.txt" />
+    <None Include="Assets\Christmas Scene\Documentation.txt" />
     <None Include="Assets\Ergin3d\Santa Claus\readme.txt" />
+    <None Include="Assets\Tim&apos;s Assets\Doors\Shader\BloodyDoor.shader" />
     <None Include="Assets\Shaders\ToonShader.shader" />
     <None Include="Assets\Shaders\SpookyStandardShader.shader" />
     <None Include="Assets\Minimalist Christmas\readme.txt" />
