@@ -72,6 +72,9 @@
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\Snow.cs" />
     <Compile Include="Assets\Scripts\Spawner.cs" />
+    <Compile Include="Assets\Scripts\Turret.cs" />
+    <Compile Include="Assets\Scripts\TurretBullet.cs" />
+    <Compile Include="Assets\Scripts\UnitHP.cs" />
     <Compile Include="Assets\Scripts\WaypointPatrol.cs" />
     <Compile Include="Assets\Scripts\properties\CameraConfig.cs" />
     <Compile Include="Assets\Scripts\properties\CharacterStatus.cs" />

@@ -3,15 +3,15 @@ using UnityEngine.UI;
 
 public class DoorController : MonoBehaviour
 {
-    public bool keyNeeded = false;              //Is key needed for the door
-    public bool gotKey;                  //Has the player acquired key
-    public GameObject keyGameObject;            //If player has Key,  assign it here
+    public bool keyNeeded = false;             
+    public bool gotKey;                  
+    public GameObject keyGameObject;            
 
-    private bool playerInZone;                  //Check if the player is in the zone
-    private bool doorOpened;                    //Check if door is currently opened or not
+    private bool playerInZone;                  
+    private bool doorOpened;                    
 
     private Animation doorAnim;
-    private BoxCollider doorCollider;           //To enable the player to go through the door if door is opened else block him
+    private BoxCollider doorCollider;           
 
     enum DoorState
     {
@@ -20,27 +20,20 @@ public class DoorController : MonoBehaviour
         Jammed
     }
 
-    DoorState doorState = new DoorState();      //To check the current state of the door
+    DoorState doorState = new DoorState();      
 
-    /// <summary>
-    /// Initial State of every variables
-    /// </summary>
     private void Start()
     {
         gotKey = false;
-        doorOpened = false;                     //Is the door currently opened
-        playerInZone = false;                   //Player not in zone
-        doorState = DoorState.Closed;           //Starting state is door closed
-
-
+        doorOpened = false;                     
+        playerInZone = false;                   
+        doorState = DoorState.Closed;           
 
         doorAnim = transform.parent.gameObject.GetComponent<Animation>();
         doorCollider = transform.parent.gameObject.GetComponent<BoxCollider>();
 
-        //If Key is needed and the KeyGameObject is not assigned, stop playing and throw error
         if (keyNeeded && keyGameObject == null)
         {
-            //UnityEditor.EditorApplication.isPlaying = false;
             Debug.LogError("Assign Key GameObject");
         }
     }
@@ -59,7 +52,6 @@ public class DoorController : MonoBehaviour
 
     private void Update()
     {
-        //To Check if the player is in the zone
         if (playerInZone)
         {
             if (doorState == DoorState.Opened)
@@ -81,7 +73,7 @@ public class DoorController : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.E) && playerInZone)
         {
-            doorOpened = !doorOpened;           //The toggle function of door to open/close
+            doorOpened = !doorOpened;          
 
             if (doorState == DoorState.Closed && !doorAnim.isPlaying)
             {

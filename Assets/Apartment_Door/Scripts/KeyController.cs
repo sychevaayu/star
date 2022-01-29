@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
-//Script on Drag and drop will create box collider component automatically
+
 [RequireComponent(typeof(BoxCollider))]
 public class KeyController : MonoBehaviour
 {
@@ -9,10 +9,6 @@ public class KeyController : MonoBehaviour
     Rigidbody keyRB;
     public DoorController DC;
 
-    /// <summary>
-    /// Incase user forgets to uncheck isTrigger in box collider
-    /// This sets them automatically
-    /// </summary>
     private void Start()
     {
         keyCollider = GetComponent<BoxCollider>();
